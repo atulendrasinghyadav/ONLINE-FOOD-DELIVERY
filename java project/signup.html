@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="stylesp.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">COOK<span>ING</span></div>
+    <nave>
+      <nav><a href="index.html">Home</a></nav>
+      <nav><a href="order.html">Order Food</a></nav>
+      <nav><a href="favrecipes.html">Recipes</a></nav>
+      <nav><a href="login.html">Login</a></nav>
+    </nave>
+  </header>
+  <div class="line"></div>
+  <div class="bigcontainer">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required>
+          <small class="error-message" id="first-name-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required>
+          <small class="error-message" id="last-name-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <small class="error-message" id="email-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="scriptsp.js"></script>
+</body>
+
+</html>
