@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Website Chatbot</title>
+  <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url(chef2.jpg);
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    object-fit: fill;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /* background-color: #fff; */
+    /* border-bottom: 1px solid #ddd; */
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    object-fit: fill;
+    height: 100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nave{
+    display: flex;
+    padding: 30px 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+nav{
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+nav:hover {
+    transform: scale(1.1);
+    opacity: 1.1;
+}
+.line{
+    background-color: black;
+    height: 10px;
+}
+
+.chatbot-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgb(18, 16, 16);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: rgb(18, 16, 16);
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.client {
+  background-color: #d1ffd6;
+  align-self: flex-end;
+}
+
+.chef {
+  background-color: #e3e3e3;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+#userInput {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+#sendBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#sendBtn:hover {
+  background-color: #388E3C;
+}
+
+#userInput:focus {
+  outline: none;
+}
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">COOK<span>ING</span></div>
+        <nave>
+          <nav><a href="index.html">Home</a></nav>
+          <nav><a href="order.html">Order Food</a></nav>
+          <nav><a href="favrecipes.html">Recipes</a></nav>
+          <nav><a href="login.html">Login</a></nav>
+        </nave>
+      </header>
+      <div class="line"></div>
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <h1>Ask the Chef</h1>
+    </div>
+    <div class="chatbox">
+      <div class="messages" id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Ask your question...">
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const messages = document.getElementById('messages');
+    const userInput = document.getElementById('userInput');
+    const sendBtn = document.getElementById('sendBtn');
+
+    // Predefined responses
+    const chefReplies = {
+      "hello": "Hello! How can I help you with your cooking today?",
+      "recipe for pizza": "To make pizza, you'll need flour, yeast, water, and your favorite toppings. Want the full recipe?",
+      "how to cook pasta": "Boil pasta in salted water until al dente. Sauté garlic in olive oil, add sauce, and mix with pasta.",
+      "thank you": "You're welcome! Let me know if you have more questions.",
+      "bye": "Goodbye! Happy cooking!",
+    };
+
+    sendBtn.addEventListener('click', () => {
+      const userMessage = userInput.value.trim().toLowerCase();
+      if (userMessage) {
+        appendMessage("client", userInput.value);
+        userInput.value = "";
+        setTimeout(() => {
+          const reply = chefReplies[userMessage] || "I'm sorry, I don't understand. Can you ask another way?";
+          appendMessage("chef", reply);
+        }, 500);
+      }
+    });
+
+    function appendMessage(sender, text) {
+      const message = document.createElement('div');
+      message.classList.add('message', sender);
+      message.textContent = text;
+      messages.appendChild(message);
+      messages.scrollTop = messages.scrollHeight; // Auto-scroll
+    }
+  </script>
+</body>
+
+</html>
