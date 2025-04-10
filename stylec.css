@@ -19,15 +19,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 50px;
-    /* background-color: #fff; */
-    /* border-bottom: 1px solid #ddd; */
     background-image: url("image.jpg");
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
     background-position: center center;
     object-fit: fill;
-    height: 100px;
+    height: auto;
 }
 
 .logo {
@@ -40,9 +39,11 @@ header {
     color: #ffffff;
 }
 
-nave{
+nave {
     display: flex;
+    flex-wrap: wrap;
     padding: 30px 50px;
+    justify-content: center;
 }
 
 nav a {
@@ -52,7 +53,7 @@ nav a {
     font-weight: 500;
 }
 
-nav{
+nav {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.8;
 }
@@ -61,16 +62,18 @@ nav:hover {
     transform: scale(1.1);
     opacity: 1.1;
 }
-.line{
+
+.line {
     background-color: black;
     height: 10px;
 }
 
-.bigcontainer{
+.bigcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    padding: 20px;
 }
 
 .container {
@@ -78,7 +81,8 @@ nav:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.543);
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
@@ -100,7 +104,10 @@ label {
     text-align: left;
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
     font-size: 14px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -129,4 +136,39 @@ button:hover {
     color: green;
     font-size: 14px;
     margin-top: 10px;
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 662px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nave {
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        opacity: 1;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .bigcontainer {
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
 }
