@@ -130,3 +130,71 @@ button:hover {
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+      height: auto;
+      background-size: cover;
+      text-align: left;
+    }
+  
+    nave{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .logo {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+  
+    nav a {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+  
+    .line {
+      height: 5px;
+    }
+  
+    .bigcontainer {
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+  
+    .container {
+      width: 100%;
+      max-width: 90%;
+      padding: 20px 15px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    label,
+    select,
+    input,
+    textarea,
+    button {
+      font-size: 14px;
+    }
+  
+    .error,
+    .success {
+      font-size: 13px;
+    }
+  }
+  
