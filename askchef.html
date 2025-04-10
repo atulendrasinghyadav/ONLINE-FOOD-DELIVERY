@@ -2,169 +2,211 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Website Chatbot</title>
   <style>
-    /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-image: url(chef2.jpg);
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    background-position: center center;
-    object-fit: fill;
-}
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-image: url(chef2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    /* background-color: #fff; */
-    /* border-bottom: 1px solid #ddd; */
-    background-image: url("image.jpg");
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    background-position: center center;
-    object-fit: fill;
-    height: 100px;
-}
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-image: url("image.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: auto;
+      flex-wrap: wrap;
+    }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4CAF50;
-}
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
 
-.logo span {
-    color: #ffffff;
-}
+    .logo span {
+      color: #ffffff;
+    }
 
-nave{
-    display: flex;
-    padding: 30px 50px;
-}
+    .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+    }
 
-nav{
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.8;
-}
+    nav {
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0.8;
+    }
 
-nav:hover {
-    transform: scale(1.1);
-    opacity: 1.1;
-}
-.line{
-    background-color: black;
-    height: 10px;
-}
+    nav:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
 
-.chatbot-container {
-  max-width: 400px;
-  margin: 50px auto;
-  background: rgb(18, 16, 16);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    .line {
+      background-color: black;
+      height: 5px;
+      width: 100%;
+    }
 
-.chatbot-header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+    .chatbot-container {
+      max-width: 60%;
+      margin: 30px auto;
+      background: rgb(18, 16, 16);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.chatbox {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-}
+    .chatbot-header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
 
-.messages {
-  flex: 1;
-  padding: 10px;
-  overflow-y: auto;
-  background: rgb(18, 16, 16);
-}
+    .chatbox {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+    }
 
-.message {
-  margin: 10px 0;
-  padding: 10px 15px;
-  border-radius: 10px;
-  max-width: 75%;
-}
+    .messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      background: rgb(18, 16, 16);
+    }
 
-.client {
-  background-color: #d1ffd6;
-  align-self: flex-end;
-}
+    .message {
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 10px;
+      max-width: 75%;
+      word-wrap: break-word;
+    }
 
-.chef {
-  background-color: #e3e3e3;
-  align-self: flex-start;
-}
+    .client {
+      background-color: #d1ffd6;
+      align-self: flex-end;
+    }
 
-.input-area {
-  display: flex;
-  border-top: 1px solid #ddd;
-}
+    .chef {
+      background-color: #e3e3e3;
+      align-self: flex-start;
+    }
 
-#userInput {
-  flex: 1;
-  border: none;
-  padding: 15px;
-  font-size: 16px;
-}
+    .input-area {
+      display: flex;
+      border-top: 1px solid #ddd;
+      flex-wrap: nowrap;
+    }
 
-#sendBtn {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s;
-}
+    #userInput {
+      flex: 1;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      min-width: 0;
+    }
 
-#sendBtn:hover {
-  background-color: #388E3C;
-}
+    #sendBtn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
 
-#userInput:focus {
-  outline: none;
-}
+    #sendBtn:hover {
+      background-color: #388E3C;
+    }
+
+    #userInput:focus {
+      outline: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+      }
+
+      .logo {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+
+      .chatbot-container{
+        max-width: 90%;
+        margin: 20px auto;
+      }
+
+      .chatbox {
+        height: 350px;
+      }
+
+      #userInput,
+      #sendBtn {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">COOK<span>ING</span></div>
-        <nave>
-          <nav><a href="index.html">Home</a></nav>
-          <nav><a href="order.html">Order Food</a></nav>
-          <nav><a href="favrecipes.html">Recipes</a></nav>
-          <nav><a href="login.html">Login</a></nav>
-        </nave>
-      </header>
-      <div class="line"></div>
+  <header>
+    <div class="logo">COOK<span>ING</span></div>
+    <div class="nav-container">
+      <nav><a href="index.html">Home</a></nav>
+      <nav><a href="order.html">Order Food</a></nav>
+      <nav><a href="favrecipes.html">Recipes</a></nav>
+      <nav><a href="login.html">Login</a></nav>
+    </div>
+  </header>
+
+  <div class="line"></div>
+
   <div class="chatbot-container">
     <div class="chatbot-header">
       <h1>Ask the Chef</h1>
@@ -183,7 +225,6 @@ nav:hover {
     const userInput = document.getElementById('userInput');
     const sendBtn = document.getElementById('sendBtn');
 
-    // Predefined responses
     const chefReplies = {
       "hello": "Hello! How can I help you with your cooking today?",
       "recipe for pizza": "To make pizza, you'll need flour, yeast, water, and your favorite toppings. Want the full recipe?",
@@ -209,7 +250,7 @@ nav:hover {
       message.classList.add('message', sender);
       message.textContent = text;
       messages.appendChild(message);
-      messages.scrollTop = messages.scrollHeight; // Auto-scroll
+      messages.scrollTop = messages.scrollHeight;
     }
   </script>
 </body>
