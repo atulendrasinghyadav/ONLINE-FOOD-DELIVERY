@@ -1,259 +1,334 @@
 /* Fav Recipes Section */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: rgb(18, 16, 16);
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: rgb(18, 16, 16);
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    /* background-color: #fff; */
-    /* border-bottom: 1px solid #ddd; */
-    background-image: url("image.jpg");
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    background-position: center center;
-    object-fit: fill;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  /* background-color: #fff; */
+  /* border-bottom: 1px solid #ddd; */
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  background-position: center center;
+  object-fit: fill;
+  height: 100px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4CAF50;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
 }
 
 .logo span {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-nave{
-    display: flex;
-    padding: 30px 50px;
+nave {
+  display: flex;
+  padding: 30px 50px;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
 }
 
-nav{
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.8;
+nav {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 nav:hover {
-    transform: scale(1.1);
-    opacity: 1.1;
+  transform: scale(1.1);
+  opacity: 1.1;
 }
-.line{
-    background-color: black;
-    height: 10px;
+
+.line {
+  background-color: black;
+  height: 10px;
 }
+
 .favrecipes {
-    padding: 50px;
-    text-align: center;
-  }
-.veg-section h3{
-    color: #ffffff;
-    font-size: 25px;
+  padding: 50px;
+  text-align: center;
 }
-  
-  .favrecipes h2 {
-    font-size: 28px;
-    color: #4CAF50;
-    margin-bottom: 20px;
+
+.veg-section h3 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.favrecipes h2 {
+  font-size: 28px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.dish-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.dish-card1 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("pavbhaji2.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card1 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dish-card2 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("vegbiryani.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card2 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dish-card3 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("pizza2.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card3 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dish-card4 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("butterchicken2.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card4 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dish-card5 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("chickenbiryani.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card5:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card5 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dish-card6 {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url("fishcurry.jpg");
+  background-repeat: no-repeat;
+  /* background-size: max(1200px, 100vw); */
+  background-position: center center;
+  object-fit: fill;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dish-card6:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card6 h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.nonveg-section h3 {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.view-recipe-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-recipe-btn:hover {
+  background-color: #388e3c;
+}
+
+summary {
+  color: #ff7f7f;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+    background-size: cover;
   }
-  
+
+  nave{
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .favrecipes {
+    padding: 20px;
+  }
+
   .dish-cards {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card1,
+  .dish-card2,
+  .dish-card3,
+  .dish-card4,
+  .dish-card5,
+  .dish-card6 {
+    width: 90%;
+    margin-bottom: 20px;
+    background-size: cover; /* Add this for better fit on small screens */
+  }
+
+  .veg-section h3,
+  .nonveg-section h3 {
+    font-size: 20px;
     margin-top: 30px;
   }
-  
-  .dish-card1 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("pavbhaji2.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card1:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card1 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
+
+  .favrecipes h2 {
+    font-size: 24px;
   }
 
-  .dish-card2 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("vegbiryani.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card2:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card2 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .dish-card3 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("pizza2.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card3:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card3 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .dish-card4 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("butterchicken2.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card4:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card4 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .dish-card5 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("chickenbiryani.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card5:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card5 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .dish-card6 {
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url("fishcurry.jpg");
-    background-repeat: no-repeat;
-    /* background-size: max(1200px, 100vw); */
-    background-position: center center;
-    object-fit: fill;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
-  }
-  
-  .dish-card6:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dish-card6 h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .nonveg-section h3{
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 25px;
-  }
-  
   .view-recipe-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    font-size: 14px;
   }
-  
-  .view-recipe-btn:hover {
-    background-color: #388e3c;
+
+  summary {
+    font-size: 14px;
   }
-  
-  summary{
-    color: #ff7f7f;
-  }
+}
