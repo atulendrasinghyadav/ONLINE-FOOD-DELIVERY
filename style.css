@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-body {
+  body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: rgb(18, 16, 16);
-}
+  }
 
-/* Header */
-header {
+  /* Header */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,88 +25,90 @@ header {
     background-position: center center;
     object-fit: fill;
     height: 100px;
-}
+  }
 
-.logo {
+  .logo {
     font-size: 24px;
     font-weight: bold;
     color: #4CAF50;
-}
+  }
 
-.logo span {
+  .logo span {
     color: #ffffff;
-}
+  }
 
-nave{
+  nave {
     display: flex;
     padding: 30px 50px;
-}
+  }
 
-nav a {
+  nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-}
+  }
 
-nav{
+  nav {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.8;
-}
+  }
 
-nav:hover {
+  nav:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
-.line{
+  }
+
+  .line {
     background-color: black;
     height: 10px;
-}
-/* Hero Section */
-.hero {
+  }
+
+  /* Hero Section */
+  .hero {
     display: flex;
     align-items: center;
     padding: 50px;
     height: 300px;
     justify-content: space-around;
-}
+  }
 
-.hero-content {
+  .hero-content {
     max-width: 50%;
-}
+  }
 
-.hero h1 {
+  .hero h1 {
     font-size: 36px;
     color: #4CAF50;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.hero h1:hover{
+  .hero h1:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.hero p {
+  .hero p {
     margin-bottom: 20px;
     color: whitesmoke;
-}
+  }
 
-.hero-image img {
+  .hero-image img {
     max-width: 100%;
     border-radius: 30px;
     max-height: 250px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.hero-image img:hover{
+  .hero-image img:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.get-started-btn {
+  .get-started-btn {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -117,37 +119,37 @@ nav:hover {
     max-width: fit-content;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.get-started-btn a{
+  .get-started-btn a {
     text-decoration: none;
     color: white;
-}
+  }
 
-.get-started-btn:hover {
+  .get-started-btn:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-/* Recipes Section */
-.recipes {
+  /* Recipes Section */
+  .recipes {
     padding: 50px;
     text-align: center;
-}
+  }
 
-.recipes h2 {
+  .recipes h2 {
     font-size: 28px;
     color: #4CAF50;
     margin-bottom: 20px;
-}
+  }
 
-.recipe-cards {
+  .recipe-cards {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-}
+  }
 
-.recip {
+  .recip {
     margin-top: 8px;
     background-color: #4CAF50;
     color: #fff;
@@ -159,142 +161,147 @@ nav:hover {
     max-width: fit-content;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.recip a{
+  .recip a {
     text-decoration: none;
     color: white;
-}
+  }
 
-.recip:hover {
+  .recip:hover {
     transform: scale(1.1);
     opacity: 1.1;
     box-shadow: 0px 4px 8px rgb(165, 166, 225);
-}
+  }
 
-.recipe-card1 {
+  .recipe-card1 {
     width: 30%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgb(190, 182, 182);
     border-radius: 10px;
-    text-align: left;background-image: url("pizza.jpg");
+    text-align: left;
+    background-image: url("pizza.jpg");
     background-repeat: no-repeat;
     /* background-size: max(1200px, 100vw); */
     background-position: center center;
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
-.recipe-card1:hover{
+  }
+
+  .recipe-card1:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.recipe-card1 h3 {
+  .recipe-card1 h3 {
     font-size: 20px;
     margin: 15px 0;
     color: #00ff08;
-}
+  }
 
-.recipe-card1 p {
+  .recipe-card1 p {
     color: #dfdfdf;
     margin-bottom: 10px;
-}
+  }
 
-.recipe-card1 span {
+  .recipe-card1 span {
     font-size: 14px;
     color: #888;
-}
+  }
 
-.recipe-card2 {
+  .recipe-card2 {
     width: 30%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
     border-radius: 10px;
-    text-align: left;background-image: url("chicken.jpg");
+    text-align: left;
+    background-image: url("chicken.jpg");
     background-repeat: no-repeat;
     /* background-size: max(1200px, 100vw); */
     background-position: center center;
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.recipe-card2:hover{
+  .recipe-card2:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.recipe-card2 h3 {
+  .recipe-card2 h3 {
     font-size: 20px;
     margin: 15px 0;
     color: #00ff08;
-}
+  }
 
-.recipe-card2 p {
+  .recipe-card2 p {
     color: #dfdfdf;
     margin-bottom: 10px;
-}
+  }
 
-.recipe-card2 span {
+  .recipe-card2 span {
     font-size: 14px;
     color: #888;
-}
+  }
 
-.recipe-card3 {
+  .recipe-card3 {
     width: 30%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
     border-radius: 10px;
-    text-align: left;background-image: url("pavbhaji.jpg");
+    text-align: left;
+    background-image: url("pavbhaji.jpg");
     background-repeat: no-repeat;
     /* background-size: max(1200px, 100vw); */
     background-position: center center;
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
-.recipe-card3:hover{
+  }
+
+  .recipe-card3:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.recipe-card3 h3 {
+  .recipe-card3 h3 {
     font-size: 20px;
     margin: 15px 0;
     color: #00ff08;
-}
+  }
 
-.recipe-card3 p {
+  .recipe-card3 p {
     color: #dfdfdf;
     margin-bottom: 10px;
-}
+  }
 
-.recipe-card3 span {
+  .recipe-card3 span {
     font-size: 14px;
     color: #888;
-}
+  }
 
-/* Services Section */
-.services {
+  /* Services Section */
+  .services {
     padding: 50px;
     text-align: center;
-}
+  }
 
-.services h2 {
+  .services h2 {
     font-size: 28px;
     color: #4CAF50;
     margin-bottom: 20px;
-}
+  }
 
-.service-items {
+  .service-items {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     height: 125px;
-}
+  }
 
-.serv {
+  .serv {
     margin-top: 8px;
     background-color: #4CAF50;
     color: #fff;
@@ -306,20 +313,20 @@ nav:hover {
     max-width: fit-content;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.serv a{
+  .serv a {
     text-decoration: none;
     color: white;
-}
+  }
 
-.serv:hover {
+  .serv:hover {
     transform: scale(1.1);
     opacity: 1.1;
     box-shadow: 0px 4px 8px rgb(165, 166, 225);
-}
+  }
 
-.service-item1 {
+  .service-item1 {
     width: 22%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
@@ -332,25 +339,25 @@ nav:hover {
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.service-item1:hover{
+  .service-item1:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.service-item1 h4 {
+  .service-item1 h4 {
     margin-top: 10px;
     font-size: 18px;
     color: #ffffff;
-}
+  }
 
-.service-item1 p {
+  .service-item1 p {
     color: #ffffff;
     font-size: 14px;
-}
+  }
 
-.service-item2 {
+  .service-item2 {
     width: 22%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
@@ -363,25 +370,25 @@ nav:hover {
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.service-item2:hover{
+  .service-item2:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.service-item2 h4 {
+  .service-item2 h4 {
     margin-top: 10px;
     font-size: 18px;
     color: #ffffff;
-}
+  }
 
-.service-item2 p {
+  .service-item2 p {
     color: #ffffff;
     font-size: 14px;
-}
+  }
 
-.service-item3 {
+  .service-item3 {
     width: 22%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
@@ -394,25 +401,25 @@ nav:hover {
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.service-item3:hover{
+  .service-item3:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.service-item3 h4 {
+  .service-item3 h4 {
     margin-top: 10px;
     font-size: 18px;
     color: #ffffff;
-}
+  }
 
-.service-item3 p {
+  .service-item3 p {
     color: #ffffff;
     font-size: 14px;
-}
+  }
 
-.service-item4 {
+  .service-item4 {
     width: 22%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(190, 182, 182);
@@ -425,38 +432,109 @@ nav:hover {
     object-fit: fill;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
-}
+  }
 
-.service-item4:hover {
+  .service-item4:hover {
     transform: scale(1.1);
     opacity: 1.1;
-}
+  }
 
-.service-item4 h4 {
+  .service-item4 h4 {
     margin-top: 10px;
     font-size: 18px;
     color: #ffffff;
-}
+  }
 
-.service-item4 p {
+  .service-item4 p {
     color: #ffffff;
     font-size: 14px;
-}
+  }
 
-/* About Section */
-.about {
+  /* About Section */
+  .about {
     padding: 50px;
     text-align: center;
-}
+  }
 
-.about h2 {
+  .about h2 {
     font-size: 28px;
     color: #4CAF50;
     margin-bottom: 20px;
-}
+  }
 
-.about p {
+  .about p {
     color: #ffffffaa;
     font-size: 16px;
     line-height: 1.6;
-}
+  }
+
+  /* Add this to the bottom of your existing style tag */
+
+  @media screen and (max-width: 850px) {
+    header {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+      background-size: cover;
+    }
+
+    nave{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+      height: auto;
+    }
+
+    .hero-content,
+    .hero-image {
+      max-width: 100%;
+    }
+
+    .hero-image img {
+      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .services{
+      height: auto;
+    }
+
+    .recipe-cards,
+    .service-items {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    .recipe-card1,
+    .recipe-card2,
+    .recipe-card3,
+    .service-item1,
+    .service-item2,
+    .service-item3,
+    .service-item4 {
+      width: 90%;
+      margin-bottom: 20px;
+      background-size: cover;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .get-started-btn {
+      margin: 20px auto;
+    }
+
+    .line {
+      height: 5px;
+    }
+  }
